@@ -28,10 +28,15 @@ public class WalkOfFame {
 		 */
 		for(int i = 0; i < 10; i++) {
 			rob.penUp();
+			rob.turn(90);
 			rob.move(50);
+			rob.turn(-90);
 			rob.penDown();
-			rob.move(30);
-			rob.turn(144);
+			for(int j = 0; j < 5; j++) {
+				rob.move(30);
+				rob.turn(144);
+			}
+			System.out.println();
 		}
 
 	}
